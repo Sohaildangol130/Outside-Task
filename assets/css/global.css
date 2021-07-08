@@ -1,1 +1,10 @@
-/* No CSS *//*# sourceMappingURL=global.css.map */
+@font-face {
+  font-family: Inter;
+  src: url("/assets/fonts/Inter-VariableFont_slnt,wght.ttf");
+}
+
+@font-face {
+  font-family: Galaxie Copernicus;
+  src: url("/assets/fonts/GalaxieCopernicus-Book.otf");
+}
+/*# sourceMappingURL=global.css.map */
