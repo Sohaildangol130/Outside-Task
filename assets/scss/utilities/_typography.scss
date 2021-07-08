@@ -1,9 +1,44 @@
+// custom font-families
 @font-face {
     font-family: Inter;
     src: url('/assets/fonts/Inter-VariableFont_slnt\,wght.ttf');
 }
-
 @font-face {
     font-family: Galaxie Copernicus;
     src: url('/assets/fonts/GalaxieCopernicus-Book.otf');
+}
+
+// font sizes
+$font-sizes: 
+(
+    'h1': 64px,
+    'h2': 44px,
+    'h3': 32px,
+    'h4': 24px,
+    'h5': 24px,
+    'h6': 14px,
+    '.p1': 18px,
+    '.p2': 14px,
+    '.b1': 18px
+);
+
+// creating custom font styles
+@each $typo-type, $size in $font-sizes {
+    #{$typo-type}{
+        @if $typo-type == 'h5' or $typo-type == 'h6' {
+            @include font-style($size, Inter, 5%, 1.0, Bold);
+        }
+        @else if $typo-type == '.p1' {
+            @include font-style($size, Galaxie Copernicus, -1%, 1.4, Book);
+        }
+        @else if $typo-type == '.p2' {
+            @include font-style($size, Inter, 2%, 1.4, Medium);
+        }
+        @else if $typo-type == '.b1' {
+            @include font-style($size, Inter, 2%, 1.0, Bold);
+        }
+        @else {
+            @include font-style($size, Galaxie Copernicus, -2%, 1.2, Book);
+        }
+    }
 }

@@ -7,4 +7,76 @@
   font-family: Galaxie Copernicus;
   src: url("/assets/fonts/GalaxieCopernicus-Book.otf");
 }
+
+h1 {
+  font-size: 64px;
+  font-family: Galaxie Copernicus;
+  letter-spacing: -2%;
+  line-height: 1.2;
+  font-weight: Book;
+}
+
+h2 {
+  font-size: 44px;
+  font-family: Galaxie Copernicus;
+  letter-spacing: -2%;
+  line-height: 1.2;
+  font-weight: Book;
+}
+
+h3 {
+  font-size: 32px;
+  font-family: Galaxie Copernicus;
+  letter-spacing: -2%;
+  line-height: 1.2;
+  font-weight: Book;
+}
+
+h4 {
+  font-size: 24px;
+  font-family: Galaxie Copernicus;
+  letter-spacing: -2%;
+  line-height: 1.2;
+  font-weight: Book;
+}
+
+h5 {
+  font-size: 24px;
+  font-family: Inter;
+  letter-spacing: 5%;
+  line-height: 1;
+  font-weight: Bold;
+}
+
+h6 {
+  font-size: 14px;
+  font-family: Inter;
+  letter-spacing: 5%;
+  line-height: 1;
+  font-weight: Bold;
+}
+
+.p1 {
+  font-size: 18px;
+  font-family: Galaxie Copernicus;
+  letter-spacing: -1%;
+  line-height: 1.4;
+  font-weight: Book;
+}
+
+.p2 {
+  font-size: 14px;
+  font-family: Inter;
+  letter-spacing: 2%;
+  line-height: 1.4;
+  font-weight: Medium;
+}
+
+.b1 {
+  font-size: 18px;
+  font-family: Inter;
+  letter-spacing: 2%;
+  line-height: 1;
+  font-weight: Bold;
+}
 /*# sourceMappingURL=global.css.map */
