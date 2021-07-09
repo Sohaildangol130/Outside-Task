@@ -79,4 +79,26 @@ h6 {
   line-height: 1;
   font-weight: Bold;
 }
+
+.header__social {
+  padding: 22px 0;
+  background-color: #f2efee;
+}
+
+.header__social > div {
+  gap: 32px;
+}
+
+@media (max-width: 576px) {
+  .header__social {
+    padding: 20px 32px;
+  }
+  .header__social > div {
+    gap: 20px;
+  }
+}
+
+.header__nav-bar {
+  padding: 15px 0;
+}
 /*# sourceMappingURL=global.css.map */

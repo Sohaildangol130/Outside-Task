@@ -1,0 +1,18 @@
+.header{
+    &__social{
+        padding: 22px 0;
+        background-color: $dusty_pink;
+        & > div{
+            gap: 32px;                
+        }
+        @include for-size(sm){
+            padding: 20px 32px;
+            & > div{
+                gap: 20px;                
+            }
+        }
+    }
+    &__nav-bar{
+        padding: 15px 0;
+    }
+}
