@@ -447,7 +447,7 @@ h6 {
 }
 
 .news {
-  padding-top: 60px;
+  padding: 60px 0;
 }
 
 @media (max-width: 768px) {
@@ -467,6 +467,12 @@ h6 {
       grid-template-columns: repeat(4, auto);
   -ms-grid-rows: (auto)[4];
       grid-template-rows: repeat(4, auto);
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
+.news__layout::-webkit-scrollbar {
+  display: none;
 }
 
 @media (max-width: 768px) {
@@ -623,6 +629,9 @@ h6 {
     position: -webkit-sticky;
     position: sticky;
     left: 0;
+  }
+  .news__layout .layout__item:nth-child(1), .news__layout .layout__item:nth-child(6) {
+    padding: 16px 0;
   }
 }
 /*# sourceMappingURL=global.css.map */
