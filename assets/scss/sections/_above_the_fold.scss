@@ -1,8 +1,9 @@
 .above-the-fold{
     position: relative;
     z-index: -3;
+    padding-bottom: 60px;
     &__bg{
-        height: 768px;
+        height: 100%;
         width: 98%;
         background-color: $white;
         position: absolute;
@@ -30,9 +31,13 @@
         }
     }
     &__image{
-        width: 95%;
-        float: right;
         margin-top: 80px;
         max-height: 565px;
+        display: flex;
+        justify-content: flex-end;
+        img{
+            width: 95%;
+            float: right;
+        }
     }
 }
