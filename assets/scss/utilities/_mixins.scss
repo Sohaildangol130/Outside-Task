@@ -4,4 +4,25 @@
     letter-spacing: $space;
     line-height: $height;
     font-weight: $weight;
+    margin: 0;
+}
+
+@mixin for-size($size) {
+    @if $size == sm {
+        @media (max-width: 576px) { 
+            @content; 
+        }
+    } @else if $size == md {
+        @media (max-width: 768px) { 
+            @content; 
+        }
+    } @else if $size == lg {
+        @media (max-width: 992px) { 
+            @content; 
+        }
+    } @else if $size == xl {
+        @media (max-width: 1200px) { 
+            @content; 
+        }
+    }
 }

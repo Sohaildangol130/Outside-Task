@@ -11,34 +11,77 @@
 // font sizes
 $font-sizes: 
 (
-    'h1': 64px,
-    'h2': 44px,
-    'h3': 32px,
-    'h4': 24px,
-    'h5': 24px,
-    'h6': 14px,
-    '.p1': 18px,
-    '.p2': 14px,
-    '.b1': 18px
+    'xl': (
+        'h1': 64px,
+        'h2': 44px,
+        'h3': 32px,
+        'h4': 24px,
+        'h5': 24px,
+        'h6': 14px,
+        '.p1': 18px,
+        '.p2': 14px,
+        '.b1': 18px
+    ),
+    'xs': (
+        'h1': 28px,
+        'h2': 24px,
+        'h3': 20px,
+        'h4': 18px,
+        'h5': 14px,
+        'h6': 10px,
+        '.p1': 14px,
+        '.p2': 12px,
+        '.b1': 14px
+    )
 );
 
 // creating custom font styles
-@each $typo-type, $size in $font-sizes {
-    #{$typo-type}{
-        @if $typo-type == 'h5' or $typo-type == 'h6' {
-            @include font-style($size, Inter, 5%, 1.0, Bold);
+@each $screen-type, $sizes in $font-sizes {
+    @if $screen-type == xl {
+        @each $typo-type, $size in $sizes {
+            #{$typo-type}{
+                @if $typo-type == 'h1' {
+                    @include font-style($size, Galaxie Copernicus, -2%, 1.1, Book);
+                }
+                @else if $typo-type == 'h5' or $typo-type == 'h6' {
+                    @include font-style($size, Inter, 5%, 1.0, Bold);
+                }
+                @else if $typo-type == '.p1' {
+                    @include font-style($size, Galaxie Copernicus, -1%, 1.4, Book);
+                }
+                @else if $typo-type == '.p2' {
+                    @include font-style($size, Inter, 2%, 1.4, Medium);
+                }
+                @else if $typo-type == '.b1' {
+                    @include font-style($size, Inter, 2%, 1.0, Bold);
+                }
+                @else {
+                    @include font-style($size, Galaxie Copernicus, -2%, 1.2, Book);
+                }
+            }
         }
-        @else if $typo-type == '.p1' {
-            @include font-style($size, Galaxie Copernicus, -1%, 1.4, Book);
-        }
-        @else if $typo-type == '.p2' {
-            @include font-style($size, Inter, 2%, 1.4, Medium);
-        }
-        @else if $typo-type == '.b1' {
-            @include font-style($size, Inter, 2%, 1.0, Bold);
-        }
-        @else {
-            @include font-style($size, Galaxie Copernicus, -2%, 1.2, Book);
+    }
+    @else if $screen-type == xs {
+        @include for-size(md){
+            @each $typo-type, $size in $sizes {
+                #{$typo-type}{
+                    @if $typo-type == 'h5' or $typo-type == 'h6' {
+                        @include font-style($size, Inter, 5%, 1.0, Bold);
+                    }
+                    @else if $typo-type == '.p1' {
+                        @include font-style($size, Galaxie Copernicus, -1%, 1.4, Book);
+                    }
+                    @else if $typo-type == '.p2' {
+                        @include font-style($size, Inter, 2%, 1.4, Medium);
+                    }
+                    @else if $typo-type == '.b1' {
+                        @include font-style($size, Inter, 2%, 1.0, Bold);
+                    }
+                    @else {
+                        @include font-style($size, Galaxie Copernicus, -2%, 1.2, Book);
+                    }
+                }
+            }
         }
     }
 }
