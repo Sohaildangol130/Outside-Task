@@ -227,7 +227,6 @@ h6 {
   height: 100vh;
   background-color: #74788b;
   opacity: .8;
-  z-index: -2;
 }
 
 .header__social {
@@ -291,7 +290,7 @@ h6 {
   opacity: 0;
   -webkit-transition: .2s all;
   transition: .2s all;
-  z-index: -2;
+  z-index: 1;
   cursor: auto;
   overflow-x: hidden;
   pointer-events: none;
@@ -390,7 +389,7 @@ h6 {
 
 .above-the-fold {
   position: relative;
-  z-index: -3;
+  z-index: -1;
   padding-bottom: 60px;
 }
 

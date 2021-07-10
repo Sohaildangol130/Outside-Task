@@ -6,7 +6,6 @@
         height: 100vh;
         background-color: $gretprup;
         opacity: .8;
-        z-index: -2;
     }
     &__social{
         padding: 22px 0;
@@ -61,7 +60,7 @@
                                 left: 0px;
                                 opacity: 0;
                                 transition: .2s all;
-                                z-index: -2;
+                                z-index: 1;
                                 cursor: auto;
                                 overflow-x: hidden;
                                 pointer-events: none;
