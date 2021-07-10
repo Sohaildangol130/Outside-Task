@@ -183,7 +183,6 @@ h6 {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  background-color: white;
 }
 
 .button__text, .button__icon {
@@ -197,15 +196,28 @@ h6 {
 }
 
 .button__icon {
-  border-left: 1px solid #c4c4c4;
   display: -ms-grid;
   display: grid;
   place-items: center;
 }
 
 .button--primary {
+  background-color: white;
   border: 1px solid #c4c4c4;
   border-radius: 2px;
+}
+
+.button--primary .button__icon {
+  border-left: 1px solid #c4c4c4;
+}
+
+.button--secondary {
+  border: none;
+  border-bottom: 1px solid #c4c4c4;
+}
+
+.button--secondary .button__text, .button--secondary .button__icon {
+  padding: 13px;
 }
 
 .header__overlay {

@@ -1,7 +1,7 @@
 .button{
+    $self: &;
     display: flex;
     align-items: center;
-    background-color: $white;
     &__text, &__icon{
         padding: 23px;
         @include for-size(md){
@@ -9,12 +9,22 @@
         }
     }
     &__icon{
-        border-left: 1px solid $mid_grey;
         display: grid;
         place-items: center;
     }
     &--primary{
+        background-color: $white;
         border: 1px solid hsla(0, 0%, 77%, 1);
         border-radius: 2px;
+        #{$self}__icon{
+            border-left: 1px solid $mid_grey;
+        }
+    }
+    &--secondary{
+        border: none;
+        border-bottom: 1px solid hsla(0, 0%, 77%, 1);
+        #{$self}__text, #{$self}__icon{
+            padding: 13px;
+        }
     }
 }
