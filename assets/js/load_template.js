@@ -1,2 +1,3 @@
 $('.header').load('./sections/header.html');
 $('.above-the-fold').load('./sections/above_the_fold.html');
+$('.news').load('./sections/news.html');
