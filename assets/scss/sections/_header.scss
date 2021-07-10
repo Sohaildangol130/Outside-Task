@@ -6,7 +6,7 @@
         height: 100vh;
         background-color: $gretprup;
         opacity: .8;
-        z-index: -10;
+        z-index: -2;
     }
     &__social{
         padding: 22px 0;
@@ -64,6 +64,7 @@
                                 z-index: -2;
                                 cursor: auto;
                                 overflow-x: hidden;
+                                pointer-events: none;
                             }
                         }
                         &--active{
@@ -78,6 +79,7 @@
                                     border-top: 1px solid $mid_grey;
                                     background-color: $white;
                                     z-index: 0;
+                                    pointer-events: auto;
                                     .dropdown__item{
                                         padding: 30px 0;
                                         position: relative;
