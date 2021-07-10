@@ -4,6 +4,7 @@
     letter-spacing: $space;
     line-height: $height;
     font-weight: $weight;
+    margin: 0;
 }
 
 @mixin for-size($size) {

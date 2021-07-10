@@ -8,4 +8,5 @@ import $ from 'jquery';
 window.$ = $;
 
 //importing js partials
-require ('./components');
+require ('./load_template');
+require('./components/global');
