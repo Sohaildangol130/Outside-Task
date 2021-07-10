@@ -9,4 +9,4 @@ window.$ = $;
 
 //importing js partials
 require ('./load_template');
-require('./components/global');
+require('./sections/global');
