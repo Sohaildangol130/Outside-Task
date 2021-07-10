@@ -13,7 +13,7 @@
         @include for-size(md){
             width: 100vw;
             overflow: scroll;
-            grid-template-columns: repeat(9, 130px);
+            grid-template-columns: repeat(9, 150px);
         }
         .layout__item{
             border: 1px solid hsla(0, 0%, 100%, 1);
@@ -35,6 +35,9 @@
                 }
                 &__desc{
                     margin-top: 16px;
+                    @include for-size(md){
+                        @include font-style(20px, Galaxie Copernicus, -2%, 1.2, Book);
+                    }
                 }
             }
             &:nth-child(1){  

@@ -461,8 +461,8 @@ h6 {
   .news__layout {
     width: 100vw;
     overflow: scroll;
-    -ms-grid-columns: (130px)[9];
-        grid-template-columns: repeat(9, 130px);
+    -ms-grid-columns: (150px)[9];
+        grid-template-columns: repeat(9, 150px);
   }
 }
 
@@ -491,6 +491,17 @@ h6 {
 
 .news__layout .layout__item .item__desc {
   margin-top: 16px;
+}
+
+@media (max-width: 768px) {
+  .news__layout .layout__item .item__desc {
+    font-size: 20px;
+    font-family: Galaxie Copernicus;
+    letter-spacing: -2%;
+    line-height: 1.2;
+    font-weight: Book;
+    margin: 0;
+  }
 }
 
 .news__layout .layout__item:nth-child(1) {
