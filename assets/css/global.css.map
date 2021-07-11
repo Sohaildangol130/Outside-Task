@@ -16,7 +16,8 @@
         "../scss/sections/_news.scss",
         "../scss/sections/_mission.scss",
         "../scss/sections/_benificiaries.scss",
-        "../scss/sections/_founders.scss"
+        "../scss/sections/_founders.scss",
+        "../scss/sections/_gallery.scss"
     ],
     "names": [],
     "file": "global.css"
