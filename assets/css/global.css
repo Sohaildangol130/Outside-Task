@@ -719,6 +719,7 @@ h6 {
   padding: 60px 0;
   position: relative;
   color: white;
+  z-index: -2;
 }
 
 @media (max-width: 768px) {
@@ -755,6 +756,7 @@ h6 {
   -webkit-box-align: end;
       -ms-flex-align: end;
           align-items: flex-end;
+  z-index: -1;
 }
 
 .founders__container .container__all-founders .all-founders__founder:last-child {

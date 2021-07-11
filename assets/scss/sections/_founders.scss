@@ -2,6 +2,7 @@
     padding: 60px 0;
     position: relative;
     color: $white;
+    z-index: -2;
     @include for-size(md){
         padding: 32px;
     }
@@ -26,6 +27,7 @@
                 background-position: center;
                 display: flex;
                 align-items: flex-end;
+                z-index: -1;
                 &:last-child{
                     margin-top: 20px;
                     display: none;
