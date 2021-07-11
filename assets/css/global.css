@@ -270,8 +270,8 @@ h6 {
             filter: grayscale(1) invert(1);
   }
   .header__nav-bar--active .nav-bar__mobile .mobile__burger img {
-    -webkit-filter: brightness(10);
-            filter: brightness(10);
+    -webkit-filter: invert(1);
+            filter: invert(1);
   }
 }
 
@@ -913,5 +913,60 @@ h6 {
     -ms-grid-row-span: 4;
     grid-row: 2/6;
   }
+}
+
+.footer {
+  height: 415px;
+  width: 100%;
+  background-color: #3b3b3b;
+  padding: 60px 0;
+  color: white;
+}
+
+.footer .social-1, .footer .social-2 {
+  gap: 30px;
+}
+
+.footer .social-1 .social__icon, .footer .social-2 .social__icon {
+  -webkit-filter: brightness(10);
+          filter: brightness(10);
+}
+
+.footer .social-1 {
+  display: none !important;
+}
+
+@media (max-width: 768px) {
+  .footer .social-1 {
+    display: -webkit-box !important;
+    display: -ms-flexbox !important;
+    display: flex !important;
+  }
+  .footer .social-2 {
+    display: none !important;
+  }
+}
+
+.footer__logo {
+  -webkit-filter: grayscale(1) invert(1);
+          filter: grayscale(1) invert(1);
+}
+
+.footer__links {
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
+  margin-top: 40px;
+  padding-top: 20px;
+}
+
+.footer__links .links__pages {
+  gap: 60px;
+}
+
+.footer__info {
+  gap: 30px;
+}
+
+.footer__info, .footer__copy {
+  opacity: .5;
 }
 /*# sourceMappingURL=global.css.map */
