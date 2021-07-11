@@ -1,0 +1,43 @@
+.footer{
+    height: 415px;
+    width: 100%;
+    background-color: $dark_grey;
+    padding: 60px 0;
+    color: $white;
+    .social-1, .social-2{
+        gap: 30px;
+        .social__icon{
+            filter: brightness(10);
+        }
+    }
+    .social-1{
+        display: none !important;
+    }
+    @include for-size(md){
+        .social-1{
+            display: flex !important;
+        }
+        .social-2{
+            display: none !important;
+        }
+    }
+    &__logo{
+        filter: grayscale(1) invert(1);
+    }
+    &__links{
+        border-top: 1px solid hsla(0, 0%, 100%, .1);
+        margin-top: 40px;
+        padding-top: 20px;
+        .links{
+            &__pages{
+                gap: 60px;
+            }                
+        }
+    }
+    &__info{
+        gap: 30px;
+    }
+    &__info, &__copy{
+        opacity: .5;
+    }
+}

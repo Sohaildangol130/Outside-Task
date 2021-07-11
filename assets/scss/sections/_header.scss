@@ -40,7 +40,7 @@
                     &__mobile{
                         .mobile__burger{
                             img{
-                                filter: brightness(10);
+                                filter: invert(1);
                             }
                         }
                     }
