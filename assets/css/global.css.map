@@ -14,7 +14,8 @@
         "../scss/sections/_header.scss",
         "../scss/sections/_above_the_fold.scss",
         "../scss/sections/_news.scss",
-        "../scss/sections/_mission.scss"
+        "../scss/sections/_mission.scss",
+        "../scss/sections/_benificiaries.scss"
     ],
     "names": [],
     "file": "global.css"
