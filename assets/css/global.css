@@ -633,4 +633,41 @@ h6 {
     padding: 16px 0;
   }
 }
+
+.mission {
+  padding: 60px 0;
+  color: white;
+  position: relative;
+  z-index: -2;
+}
+
+.mission__bg {
+  background-color: #8d2532;
+  height: 70%;
+  position: absolute;
+  top: 0;
+  z-index: -1;
+}
+
+@media (max-width: 768px) {
+  .mission__bg {
+    height: 85%;
+  }
+}
+
+.mission__container .container__heading {
+  margin-top: 30px;
+}
+
+.mission__container .container__description {
+  margin-top: 20px;
+}
+
+.mission__image {
+  margin-top: 80px;
+}
+
+.mission__image img {
+  width: 95%;
+}
 /*# sourceMappingURL=global.css.map */

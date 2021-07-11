@@ -1,0 +1,32 @@
+.mission{
+    padding: 60px 0;
+    color: $white;
+    position: relative;
+    z-index: -2;
+    &__bg{
+        background-color: $dark_red;
+        height: 70%;
+        position: absolute;
+        top: 0;
+        z-index: -1;
+        @include for-size(md){
+            height: 85%;
+        }
+    }
+    &__container{
+        .container{
+            &__heading{
+                margin-top: 30px;
+            }
+            &__description{
+                margin-top: 20px;
+            }
+        }
+    }
+    &__image{
+        margin-top: 80px;
+        img{
+            width: 95%;
+        }
+    }
+}
