@@ -26,7 +26,7 @@ eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var boot
   \************************************/
 /***/ (() => {
 
-eval("$('.header').load('./sections/header.html');\r\n$('.above-the-fold').load('./sections/above_the_fold.html');\r\n$('.news').load('./sections/news.html');\r\n$('.mission').load('./sections/mission.html');\r\n$('.benificiaries').load('./sections/benificiaries.html');\r\n$('.founders').load('./sections/founders.html');\r\n$('.gallery').load('./sections/gallery.html');\n\n//# sourceURL=webpack://outside/./assets/js/load_template.js?");
+eval("$('.header').load('./sections/header.html');\r\n$('.above-the-fold').load('./sections/above_the_fold.html');\r\n$('.news').load('./sections/news.html');\r\n$('.mission').load('./sections/mission.html');\r\n$('.benificiaries').load('./sections/benificiaries.html');\r\n$('.founders').load('./sections/founders.html');\r\n$('.gallery').load('./sections/gallery.html');\r\n$('.footer').load('./sections/footer.html');\n\n//# sourceURL=webpack://outside/./assets/js/load_template.js?");
 
 /***/ }),
 
