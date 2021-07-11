@@ -452,6 +452,7 @@ h6 {
 @media (max-width: 768px) {
   .news {
     padding: 32px;
+    padding-right: 0;
   }
 }
 
@@ -476,7 +477,6 @@ h6 {
 
 @media (max-width: 768px) {
   .news__layout {
-    width: 100vw;
     overflow: scroll;
     -ms-grid-columns: (150px)[9];
         grid-template-columns: repeat(9, 150px);
@@ -495,6 +495,7 @@ h6 {
 .news__layout .layout__item .item__image {
   height: 250px;
   background-size: cover;
+  background-color: #f2efee;
 }
 
 .news__layout .layout__item .item__date {
@@ -669,5 +670,48 @@ h6 {
 
 .mission__image img {
   width: 95%;
+}
+
+.benificiaries {
+  padding: 60px 0;
+  background-color: white;
+}
+
+@media (max-width: 768px) {
+  .benificiaries {
+    padding: 32px;
+    padding-right: 0px;
+  }
+}
+
+.benificiaries__heading {
+  color: #003b94;
+}
+
+.benificiaries__container {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (270px)[5];
+      grid-template-columns: repeat(5, 270px);
+  gap: 30px;
+  overflow-x: scroll;
+  margin-top: 50px;
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
+.benificiaries__container::-webkit-scrollbar {
+  display: none;
+}
+
+.benificiaries__container .container__card .card__image {
+  height: 350px;
+  background-color: #f2efee;
+  background-size: cover;
+  background-position: center;
+}
+
+.benificiaries__container .container__card .card__text {
+  margin-top: 15px;
 }
 /*# sourceMappingURL=global.css.map */

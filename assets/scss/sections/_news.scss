@@ -2,6 +2,7 @@
     padding: 60px 0;
     @include for-size(md){
         padding: 32px;
+        padding-right: 0;
     }
     &__heading{
         color: $dark-blue;
@@ -16,7 +17,6 @@
             display: none;
         }
         @include for-size(md){
-            width: 100vw;
             overflow: scroll;
             grid-template-columns: repeat(9, 150px);
         }
@@ -30,6 +30,7 @@
                 &__image{
                     height: 250px;
                     background-size: cover;
+                    background-color: $dusty-pink;
                 }
                 &__date{
                     margin-top: 20px;

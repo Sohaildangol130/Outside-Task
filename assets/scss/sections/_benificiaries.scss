@@ -1,0 +1,36 @@
+.benificiaries{
+    padding: 60px 0;
+    background-color: $white;
+    @include for-size(md){
+        padding: 32px;
+        padding-right: 0px;
+    }
+    &__heading{
+        color: $dark-blue;
+    }
+    &__container{
+        display: grid;
+        grid-template-columns: repeat(5, 270px);
+        gap: 30px;
+        overflow-x: scroll;
+        margin-top: 50px;
+        -ms-overflow-style: none;
+        scrollbar-width: none;
+        &::-webkit-scrollbar{
+            display: none;
+        }
+        .container__card{
+            .card{
+                &__image{
+                    height: 350px;
+                    background-color: $dusty-pink;
+                    background-size: cover;
+                    background-position: center;
+                }
+                &__text{
+                    margin-top: 15px;
+                }
+            }
+        }
+    }
+}
