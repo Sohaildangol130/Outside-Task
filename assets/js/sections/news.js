@@ -1,5 +1,4 @@
 $(()=>{
-    console.log("asd")
     const tl = gsap.timeline({
         scrollTrigger: ({
             trigger: ".news"

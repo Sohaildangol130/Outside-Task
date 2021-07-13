@@ -96,7 +96,7 @@ eval("$(()=>{\r\n    const tl = gsap.timeline({\r\n        scrollTrigger: ({\r\n
   \************************************/
 /***/ (() => {
 
-eval("$(()=>{\r\n    console.log(\"asd\")\r\n    const tl = gsap.timeline({\r\n        scrollTrigger: ({\r\n            trigger: \".news\"\r\n        })\r\n    })\r\n\r\n    tl\r\n    .from('.layout__item:nth-child(1)', {opacity:0, duration: 1})\r\n    .from('.layout__item:nth-child(2)', {opacity:0, y: 50, duration: 1}, \"-=.7\")\r\n    .from('.layout__item:nth-child(3)', {opacity:0, y: 50, duration: 1}, \"-=.7\")\r\n    .from('.layout__item:nth-child(4)', {opacity:0, y: 50, duration: 1}, \"-=.7\")\r\n    .from('.layout__item:nth-child(5)', {opacity:0, y: 50, duration: 1}, \"-=1\")\r\n    .from('.layout__item:nth-child(6)', {opacity:0, duration: 1}, \"-=1\")\r\n})\n\n//# sourceURL=webpack://outside/./assets/js/sections/news.js?");
+eval("$(()=>{\r\n    const tl = gsap.timeline({\r\n        scrollTrigger: ({\r\n            trigger: \".news\"\r\n        })\r\n    })\r\n\r\n    tl\r\n    .from('.layout__item:nth-child(1)', {opacity:0, duration: 1})\r\n    .from('.layout__item:nth-child(2)', {opacity:0, y: 50, duration: 1}, \"-=.7\")\r\n    .from('.layout__item:nth-child(3)', {opacity:0, y: 50, duration: 1}, \"-=.7\")\r\n    .from('.layout__item:nth-child(4)', {opacity:0, y: 50, duration: 1}, \"-=.7\")\r\n    .from('.layout__item:nth-child(5)', {opacity:0, y: 50, duration: 1}, \"-=1\")\r\n    .from('.layout__item:nth-child(6)', {opacity:0, duration: 1}, \"-=1\")\r\n})\n\n//# sourceURL=webpack://outside/./assets/js/sections/news.js?");
 
 /***/ }),
 
