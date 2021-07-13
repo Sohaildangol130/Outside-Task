@@ -36,7 +36,7 @@ eval("$('.header').load('./sections/header.html');\r\n$('.above-the-fold').load(
   \**********************************************/
 /***/ (() => {
 
-eval("$(()=>{\r\n    const tl = gsap.timeline({\r\n        scrollTrigger: {\r\n            trigger: '.above-the-fold'\r\n        }\r\n    });\r\n    \r\n    tl\r\n    .from(\".above-the-fold__bg\", {opacity: 0, y: 200, duration:1})\r\n    .from(\".main__text\", {opacity: 0, duration: 1}, \"-=.5\")\r\n    .from(\".main__button\", {opacity: 0, duration:1}, \"-=1\")\r\n    .from(\".above-the-fold__image img\", {width: 0, height: 565})\r\n})\n\n//# sourceURL=webpack://outside/./assets/js/sections/above_the_fold.js?");
+eval("$(()=>{\r\n    const tl = gsap.timeline({\r\n        scrollTrigger: {\r\n            trigger: '.above-the-fold'\r\n        }\r\n    });\r\n    \r\n    tl\r\n    .from(\".above-the-fold__bg\", {opacity: 0, y: 200, duration:1})\r\n    .from(\".main__text\", {opacity: 0, duration: 1}, \"-=.5\")\r\n    .from(\".main__button\", {opacity: 0, duration:1}, \"-=1\")\r\n    .from(\".above-the-fold__image img\", {opacity: 0, y: 200}, \"-=.7\")\r\n})\n\n//# sourceURL=webpack://outside/./assets/js/sections/above_the_fold.js?");
 
 /***/ }),
 
