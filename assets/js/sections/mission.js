@@ -7,6 +7,5 @@ $(()=>{
 
     tl
     .from(".mission__bg", {opacity: 0, y: 200, duration:1})
-    .from(".mission__container", {opacity: 0, duration:1}, "-=.7")
     .from(".mission__image img", {opacity: 0, scale: 0}, "-=.7")
 });

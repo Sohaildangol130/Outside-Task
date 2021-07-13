@@ -50,13 +50,23 @@ eval("$(()=>{\r\n    const tl = gsap.timeline({\r\n        scrollTrigger: ({\r\n
 
 /***/ }),
 
+/***/ "./assets/js/sections/founders.js":
+/*!****************************************!*\
+  !*** ./assets/js/sections/founders.js ***!
+  \****************************************/
+/***/ (() => {
+
+eval("$(()=>{\r\n    const tl = gsap.timeline({\r\n        scrollTrigger: ({\r\n            trigger: '.founders'\r\n        })\r\n    })\r\n\r\n    tl.from('.founders__bg', {opacity: 0, duration: 1})\r\n    .from('.container__all-founders', {opacity: 0, y: 50, duration: 1}, \"-=.7\")\r\n})\n\n//# sourceURL=webpack://outside/./assets/js/sections/founders.js?");
+
+/***/ }),
+
 /***/ "./assets/js/sections/global.js":
 /*!**************************************!*\
   !*** ./assets/js/sections/global.js ***!
   \**************************************/
 /***/ ((__unused_webpack_module, __unused_webpack_exports, __webpack_require__) => {
 
-eval("__webpack_require__(/*! ./header */ \"./assets/js/sections/header.js\");\r\n__webpack_require__(/*! ./above_the_fold */ \"./assets/js/sections/above_the_fold.js\");\r\n__webpack_require__(/*! ./news */ \"./assets/js/sections/news.js\");\r\n__webpack_require__(/*! ./mission */ \"./assets/js/sections/mission.js\");\r\n__webpack_require__(/*! ./benificiaries */ \"./assets/js/sections/benificiaries.js\");\n\n//# sourceURL=webpack://outside/./assets/js/sections/global.js?");
+eval("__webpack_require__(/*! ./header */ \"./assets/js/sections/header.js\");\r\n__webpack_require__(/*! ./above_the_fold */ \"./assets/js/sections/above_the_fold.js\");\r\n__webpack_require__(/*! ./news */ \"./assets/js/sections/news.js\");\r\n__webpack_require__(/*! ./mission */ \"./assets/js/sections/mission.js\");\r\n__webpack_require__(/*! ./benificiaries */ \"./assets/js/sections/benificiaries.js\");\r\n__webpack_require__(/*! ./founders */ \"./assets/js/sections/founders.js\");\n\n//# sourceURL=webpack://outside/./assets/js/sections/global.js?");
 
 /***/ }),
 
@@ -76,7 +86,7 @@ eval("$(() => {\r\n    $('.nav-bar__desktop .nav-items__single-item .single-item
   \***************************************/
 /***/ (() => {
 
-eval("$(()=>{\r\n    const tl = gsap.timeline({\r\n        scrollTrigger: ({\r\n            trigger: '.mission'\r\n        })\r\n    })\r\n\r\n    tl\r\n    .from(\".mission__bg\", {opacity: 0, y: 200, duration:1})\r\n    .from(\".mission__container\", {opacity: 0, duration:1}, \"-=.7\")\r\n    .from(\".mission__image img\", {opacity: 0, scale: 0}, \"-=.7\")\r\n});\n\n//# sourceURL=webpack://outside/./assets/js/sections/mission.js?");
+eval("$(()=>{\r\n    const tl = gsap.timeline({\r\n        scrollTrigger: ({\r\n            trigger: '.mission'\r\n        })\r\n    })\r\n\r\n    tl\r\n    .from(\".mission__bg\", {opacity: 0, y: 200, duration:1})\r\n    .from(\".mission__image img\", {opacity: 0, scale: 0}, \"-=.7\")\r\n});\n\n//# sourceURL=webpack://outside/./assets/js/sections/mission.js?");
 
 /***/ }),
 
