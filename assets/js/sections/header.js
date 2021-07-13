@@ -11,4 +11,12 @@ $(() => {
         $('.header__overlay').toggle();
         $('.mobile__nav-items').toggle();
     })
+
+    const tl = gsap.timeline({
+        scrollTrigger: ({
+            trigger: '.header'
+        })
+    })
+
+    tl.from('.header', {opacity: 0, duration: 1});
 })

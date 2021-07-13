@@ -443,6 +443,8 @@ h6 {
 .above-the-fold__image img {
   width: 95%;
   float: right;
+  -webkit-transform-origin: top center;
+          transform-origin: top center;
 }
 
 .news {
