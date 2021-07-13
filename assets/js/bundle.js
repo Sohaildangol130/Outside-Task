@@ -40,13 +40,23 @@ eval("$(()=>{\r\n    const tl = gsap.timeline({\r\n        scrollTrigger: {\r\n 
 
 /***/ }),
 
+/***/ "./assets/js/sections/benificiaries.js":
+/*!*********************************************!*\
+  !*** ./assets/js/sections/benificiaries.js ***!
+  \*********************************************/
+/***/ (() => {
+
+eval("$(()=>{\r\n    const tl = gsap.timeline({\r\n        scrollTrigger: ({\r\n            trigger: '.benificiaries'\r\n        })\r\n    })\r\n\r\n    tl\r\n    .from('.benificiaries__heading', {opacity: 0, y: 50, duration: 1})\r\n    .from('.benificiaries__container', {opacity: 0}, \"-=.7\")\r\n})\n\n//# sourceURL=webpack://outside/./assets/js/sections/benificiaries.js?");
+
+/***/ }),
+
 /***/ "./assets/js/sections/global.js":
 /*!**************************************!*\
   !*** ./assets/js/sections/global.js ***!
   \**************************************/
 /***/ ((__unused_webpack_module, __unused_webpack_exports, __webpack_require__) => {
 
-eval("__webpack_require__(/*! ./header */ \"./assets/js/sections/header.js\");\r\n__webpack_require__(/*! ./above_the_fold */ \"./assets/js/sections/above_the_fold.js\");\r\n__webpack_require__(/*! ./news */ \"./assets/js/sections/news.js\");\r\n__webpack_require__(/*! ./mission */ \"./assets/js/sections/mission.js\");\n\n//# sourceURL=webpack://outside/./assets/js/sections/global.js?");
+eval("__webpack_require__(/*! ./header */ \"./assets/js/sections/header.js\");\r\n__webpack_require__(/*! ./above_the_fold */ \"./assets/js/sections/above_the_fold.js\");\r\n__webpack_require__(/*! ./news */ \"./assets/js/sections/news.js\");\r\n__webpack_require__(/*! ./mission */ \"./assets/js/sections/mission.js\");\r\n__webpack_require__(/*! ./benificiaries */ \"./assets/js/sections/benificiaries.js\");\n\n//# sourceURL=webpack://outside/./assets/js/sections/global.js?");
 
 /***/ }),
 
